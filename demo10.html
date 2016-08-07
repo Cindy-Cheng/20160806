@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+
+	<style type="text/css">
+		#z3{
+			font-size: 18px;
+		}
+		.red{
+			background: red;
+		}
+		.yellow{
+			background: yellow;
+		}
+	</style>
+
+	<script type="text/javascript">
+		window.onload=function(){
+			var e1=document.getElementById('z1');
+			var e2=document.getElementById('z2');
+			var e3=document.getElementById('z3');
+			var e4=document.getElementById('z4');
+			var e5=document.getElementById('z5');
+
+			e4.onclick=function(){
+				e3.className="yellow";
+			}
+
+			e5.onclick=function(){
+				e3.className="red";
+			}
+
+			var fontsize=18;
+			e1.onclick=function(){
+				if(fontsize==30){
+					alert("你不能再加了");
+				}
+				else{
+					fontsize++;
+
+					e3.style.paddongLeft=fontsize+"px";
+					e3.style.fontSize=fontsize+"px";
+				}
+			}
+
+			e2.onclick=function(){
+				if(fontsize==12){
+					alert("你不能再减了");
+				}
+
+				else{
+					fontsize--;
+					e3.style.fontSize=fontsize+"px";
+				}
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<button id="z1">+</button>
+	<button id="z2">-</button>
+
+	<button id="z4">黄色</button>
+	<button id="z5">红色</button>
+
+	<div id="z3" class="red">
+		哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+	</div>
+</body>
+</html>

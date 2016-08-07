@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+
+	<style type="text/css">
+		img{
+			display: block;
+			width: 300px;
+			height: 160px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		window.onload=function(){
+			var e1=document.getElementById('t1');
+			var e2=document.getElementById('t2');
+			var e3=document.getElementById('t3');
+
+			e3.onclick=function(){
+				e2.src=e1.value;
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<input type="text" name="" value="" id="t1">
+	<button id="t3">确定</button>
+
+	<img src="images/1.jpg" id="t2">
+
+</body>
+</html>

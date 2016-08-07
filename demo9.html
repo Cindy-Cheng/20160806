@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+
+	<script type="text/javascript">
+		window.onload=function(){
+			var e1=document.getElementById('t1');
+			var e2=document.getElementById('t2');
+			var e3=document.getElementById('view');
+
+			e2.onclick=function(){
+				var value=e1.value;
+				e3.innerHTML=e3.innerHTML+value+"<br/>";
+				e1.value="";
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<input type="text" name="" value="" id="t1">
+
+	<button id="t2">确定</button>
+
+	<div id="view"></div>
+
+</body>
+</html>

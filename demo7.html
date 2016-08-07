@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title></title>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var e1=document.getElementById('t1');
+			var e2=document.getElementById('t2');
+			var e3=document.getElementById('t3');
+
+			
+
+			e3.onclick=function(){
+				// alert(e1.value+"在"+e2.value)
+
+				e1.value=e2.value;
+			}
+		}
+	</script>
+</head>
+<body>
+	<input type="text" name="" value="" id="t1">
+
+	<select id="t2">
+		<option value="北京">北京</option>
+		<option value="上海">上海</option>
+	</select>
+
+	<button id="t3">确定</button>
+
+</body>
+</html>
